@@ -1,0 +1,103 @@
+{
+  "map": {
+    "targetId": "map",
+    "defaultExtent": {
+      "zoom": 9,
+      "maxZoom": 20,
+      "minZoom": 2,
+      "center": [
+        112.857875293,
+        23.132018
+      ],
+      "projection": "EPSG:4326"
+    }
+  },
+  "baseLayers": [
+    {
+      "url": "http://t0.tianditu.gov.cn/vec_c/wmts?tk=f6f7ba2194f271710d3406c280561cb2",
+      "layer": "vec",
+      "id": "tdt_vec",
+      "name": "天地图影像",
+      "matrixSet": "c",
+      "format": "tiles",
+      "type": "WMTS",
+      "visible": false
+    },
+    {
+      "url": "http://t0.tianditu.gov.cn/cva_c/wmts?tk=f6f7ba2194f271710d3406c280561cb2",
+      "layer": "cva",
+      "id": "tdt_cva",
+      "name": "天地图影像",
+      "matrixSet": "c",
+      "format": "tiles",
+      "type": "WMTS",
+      "visible": false
+    },
+    {
+      "url": "http://t0.tianditu.gov.cn/img_c/wmts?tk=f6f7ba2194f271710d3406c280561cb2",
+      "layer": "img",
+      "id": "tdt_img",
+      "name": "天地图影像",
+      "matrixSet": "c",
+      "format": "tiles",
+      "type": "WMTS",
+      "visible": true
+    },
+    {
+      "url": "http://t0.tianditu.gov.cn/cia_c/wmts?tk=f6f7ba2194f271710d3406c280561cb2",
+      "layer": "cia",
+      "id": "tdt_cia",
+      "name": "天地图影像",
+      "matrixSet": "c",
+      "format": "tiles",
+      "type": "WMTS",
+      "visible": true
+    },
+    {
+      "url": "/gmap/proxyHandler?url=https://dc-gateway.gdgov.cn/ebus/zwdsj-dlk/geostar/GD_YXT/wmts%3F",
+      "layer": "ZRZYT_YXDT",
+      "id": "ZRZYT_YXDT",
+      "name": "粤政图-广东2014年7_15级晕渲图",
+      "matrixSet": "Matrix_ZRZYT_YXDT_0",
+      "format": "image/png",
+      "type": "WMTS",
+      "visible": false
+    }
+  ],
+  "vectorLayers": [
+    {
+      "id": "commonLayer",
+      "name": "通用图层",
+      "type": "VectorLayer",
+      "zIndex": 10,
+      "visible": true
+    },
+    {
+      "id": "modelResult",
+      "name": "多源异构模型图层",
+      "layerType": 4,
+      "visible": true
+    },
+    {
+      "id": "thiesenLayer",
+      "name": "泰森多边形图层",
+      "type": "VectorLayer",
+      "zIndex": 9,
+      "visible": true
+    },
+    {
+      "id": "vecLayer",
+      "name": "矢量图层",
+      "type": "VectorLayer",
+      "zIndex": 9,
+      "visible": true
+    },
+    {
+      "id": "trafficLayer",
+      "name": "交通图层",
+      "type": "VectorLayer",
+      "zIndex": 9,
+      "visible": true
+    }
+  ]
+}
